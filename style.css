@@ -108,6 +108,8 @@ body {
     z-index: 2;
     color: var(--white);
     text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .hero__btn:after {
@@ -133,6 +135,11 @@ body {
 .hero__img {
     width: 100%;
 }
+
+
+/* ABOUT */
+
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
@@ -229,7 +236,7 @@ body {
     }
 
     .hero__img {
-        width: 380px;
+        width: 80%;
     }
 }
 
