@@ -12,8 +12,8 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <a href="#" class="navbar__logo">MartinezDev</a>
+    <nav class="navbar container">
+        <a href="#home" class="navbar__logo">MartinezDev</a>
         <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -28,11 +28,11 @@
 
 
     <!-- HERO -->
-    <div class="hero">
+    <section class="hero" id="home">
         <div class="hero__container">
             <div class="hero__content">
                 <h1>Beautiful Websites<br>for Your Business</h1>
-                <p>Michael Martinez, Web Designer</p>
+                <p>Michael Martinez,<br>Web Designer</p>
                 <button class="hero__btn">
                     <a href="#portfolio">See my work</a>
                 </button>
@@ -41,17 +41,34 @@
                 <img class="hero__img" src="./img/reading_book.svg" alt="Michael's avatar">
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio section" id="portfolio">
+        <div class="">
+            <p class="topline">My Work</p>
+            <h2 class="heading">Recent Projects</h2>
+        </div>
+        <div class="portfolio__grid">
+            <div class="project-block">Velis Music</div>
+            <div class="project-block">Pure Texture</div>
+            <div class="project-block">WP Theme One</div>
+            <div class="project-block">WordPress 2</div>
+            <div class="project-block">Shopify One</div>
+            <div class="project-block">Shopify 2</div>
+        </div>
+    </section>
 
 
     <!-- ABOUT -->
-    <div class="about">
-        <div class="about__container">
+    <section class="about section" id="about">
+        <div class="container">
             <div>
-                <p class="topline">Experience</p>
-                <h2 class="about__heading">What I Can Do For You</h2>
+                <p class="topline">My Experience</p>
+                <h2 class="heading">What I Can Do For You</h2>
                 <div class="about__features">
-                    <p class="about__feature"><i class="far fa-check-circle"></i> UI Design with Figma or Adobe XD</p>
+                    <p class="about__feature"><i class="far fa-check-circle"></i> UI Design with Figma and Adobe XD</p>
                     <p class="about__feature"><i class="far fa-check-circle"></i> Responsive design with Bootstrap</p>
                     <p class="about__feature"><i class="far fa-check-circle"></i> Front-end development with React</p>
                     <p class="about__feature"><i class="far fa-check-circle"></i> WordPress theme development</p>
@@ -63,7 +80,7 @@
                 <img class="about__img" src="./img/mobile.svg" alt="">
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="./app.js"></script>
 </body>
