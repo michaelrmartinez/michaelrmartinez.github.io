@@ -15,7 +15,9 @@ const mobileMenu = function () {
 
 // Close menu
 const closeMenu = function () {
+    menu.classList.remove('is-active');
     menuLinks.classList.remove('active');
+    body.classList.remove('active');
 }
 
 

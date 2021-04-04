@@ -66,6 +66,14 @@ body {
     font-size: 2rem;
 }
 
+.navbar__logo::before {
+    content: "< ";
+}
+
+.navbar__logo::after {
+    content: " >";
+}
+
 .navbar__link {
     color: var(--white);
     text-decoration: none;
