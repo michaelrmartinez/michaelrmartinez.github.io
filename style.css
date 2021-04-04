@@ -14,13 +14,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* REUSABLE */
 .section {
-    padding: 5rem calc((100vw - 1200px) / 2);
+    padding: 6rem calc((100vw - 1200px) / 2) 4rem;
 }
 
 .topline {
