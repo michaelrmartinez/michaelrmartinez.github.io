@@ -178,7 +178,7 @@ body {
 .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px 20px;
+    grid-gap: 40px 20px;
 }
 
 .project-block {
@@ -191,6 +191,101 @@ body {
     background-size: cover;
     color: var(--white);
     font-weight: 500;
+    transition: 0.4s all;
+    border-radius: 4px;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.project-details p{
+    margin-top: 0.5rem;
+}
+
+.project-block:hover {
+    transform: scale(1.05);
+}
+
+
+/* MODALS */
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.4s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-bg h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.modal-bg p {
+    font-size: 1.15rem;
+}
+
+.modal {
+    max-width: 500px;
+    min-width: 300px;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.modal__img--container {
+    overflow: hidden;
+}
+
+.modal__img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.modal__img:hover {
+    transform: scale(1.05);
+}
+
+.modal__link {
+    display: inline-block;
+    padding: 14px 32px;
+    margin-top: 1rem;
+    background-color: var(--red);
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: var(--white);
+    transition: background-color 0.3s ease-out;
+}
+
+.modal__link:hover {
+    background-color: var(--black);
+}
+
+.modal-close--container {
+    text-align: right;
+}
+
+.modal-close {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
     cursor: pointer;
 }
 

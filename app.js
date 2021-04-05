@@ -1,11 +1,12 @@
-// VARIABLES
+// VARIABLES ----------
+// navmenu
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 const body = document.querySelector('body');
 const navLinks = document.querySelectorAll('.navbar__link');
 
-
+// FUNCTIONS ----------
 // Display mobile menu
 const mobileMenu = function () {
     menu.classList.toggle('is-active');
@@ -21,7 +22,7 @@ const closeMenu = function () {
 }
 
 
-// EVENT LISTENERS
+// EVENT LISTENERS ----------
 menu.addEventListener('click', mobileMenu);
 
 navLinks.forEach(navLink => {
